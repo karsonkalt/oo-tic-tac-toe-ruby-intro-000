@@ -238,8 +238,8 @@ end
 
   def play
     puts "Play against computer? (Y/N)"
-    computerGame? = gets.chomp
-    if computerGame? == "N"
+    computer_game = gets.chomp
+    if computer_game == "N"
       display_board
       until over? == true
         turn
@@ -257,7 +257,7 @@ end
         puts "-----------------------"
       end
     end
-  elsif computerGame? == "Y"
+  elsif ccomputer_game == "Y"
     puts "You want to play against a computer!"
   else
     puts "Invalid response."
