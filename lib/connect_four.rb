@@ -237,7 +237,7 @@ end
   end
 
   def play
-    puts "Play against computer? (Y/N)"
+    puts "Do you want to play against the computer? (Y/N)"
     computer_game = gets.chomp
     if computer_game == "N"
       display_board
