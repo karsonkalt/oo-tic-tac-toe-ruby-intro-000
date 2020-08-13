@@ -237,22 +237,30 @@ end
   end
 
   def play
-    display_board
-    until over? == true
-      turn
-    end
+    puts "Play against computer? (Y/N)"
+    computerGame? = gets.chomp
+    if computerGame? = "N"
+      display_board
+      until over? == true
+        turn
+      end
 
-    if !won? == false
-      puts "-------------------"
-      puts "  CONGRATULATIONS  "
-      puts "-------------------"
-      puts "  #{winner} WON THE GAME!  "
-      puts "-------------------"
-    elsif draw?
-      puts "-----------------------"
-      puts "IT'S A DRAW, NOBODY WON"
-      puts "-----------------------"
+      if !won? == false
+        puts "-------------------"
+        puts "  CONGRATULATIONS  "
+        puts "-------------------"
+        puts "  #{winner} WON THE GAME!  "
+        puts "-------------------"
+      elsif draw?
+        puts "-----------------------"
+        puts "IT'S A DRAW, NOBODY WON"
+        puts "-----------------------"
+      end
     end
+  elsif computerGame? = "Y"
+    puts "You want to play against a computer!"
+  else
+    puts "Invalid response."
+    play
   end
-
 end
