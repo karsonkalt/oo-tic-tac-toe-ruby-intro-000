@@ -256,7 +256,6 @@ end
         puts "IT'S A DRAW, NOBODY WON"
         puts "-----------------------"
       end
-    end
   elsif computer_game == "Y"
     puts "You want to play against a computer!"
   else
