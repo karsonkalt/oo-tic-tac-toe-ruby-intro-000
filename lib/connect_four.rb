@@ -168,7 +168,7 @@ end
     puts "--------------"
     puts "   #{token}'S TURN  "
     puts "--------------"
-    puts "Please choose a column to drop your move."
+    puts "Please choose a column to drop your token."
     column = gets.chomp.to_i
     if valid_move?(column) == true
       move(column, token)
