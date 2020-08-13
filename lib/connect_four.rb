@@ -257,7 +257,7 @@ end
         puts "-----------------------"
       end
   elsif computer_game == "Y"
-    puts "You want to play against a computer!"
+    puts "Do you want to play against the computer?"
   else
     puts "Invalid response."
     play
